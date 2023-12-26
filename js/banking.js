@@ -30,19 +30,19 @@ document.getElementById('btn-deposite').addEventListener('click' , function(){
 // ____________________________Handle Withdraw Button________________________
 document.getElementById('btn-withdraw').addEventListener('click' , function(){
 
-    // ______get deposit amount_____
+    // ______get withdraw amount_____
     const withdrawInput =document.getElementById('withdraw-input');
 
-    // _______get previous deposit amount______ 
+    // _______get previous withdraw amount______ 
     const totalWithdraw = document.getElementById('total-withdraw');
 
     // _______get total balance______
     const totalbalance = document.getElementById('total-balance');
 
-    // ______ add previous $ deposit amount ______
+    // ______ add previous $ withdraw amount ______
     const currentWithdraw = parseFloat(totalWithdraw.innerText) + parseFloat(withdrawInput.value);
     
-    // _______add previous balance & deposit Amount______
+    // _______Substraction previous balance & withdraw Amount______
     const totalAmount = parseFloat(totalbalance.innerText) - parseFloat(withdrawInput.value);
 
     // ______display total deposit____
